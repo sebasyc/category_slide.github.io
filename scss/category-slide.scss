@@ -12,6 +12,7 @@ body {
 	padding: 0;
 	list-style: none;
 	&__item {
+		transition: .3s;
 		&:not(:last-child) {
 			border-bottom: 1px solid #cccccc;
 		}
@@ -33,7 +34,9 @@ body {
 				width: 20px;
 				height: 20px;
 				text-align: center;
+				font-size: 1.25em;
 				line-height: 20px;
+				font-weight: 400;
 				right: 0;
 				transition: .3s;
 				@include center-y;
@@ -61,6 +64,7 @@ body {
 			}
 		}
 		&.open {
+			border-bottom: none;
 			.item-title {
 				color: #ff1c18;
 				&:after {
